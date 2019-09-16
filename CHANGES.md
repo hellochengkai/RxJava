@@ -2,6 +2,43 @@
 
 The changelog of version 1.x can be found at https://github.com/ReactiveX/RxJava/blob/1.x/CHANGES.md
 
+### Version 2.2.12 - August 25, 2019 ([Maven](http://search.maven.org/#artifactdetails%7Cio.reactivex.rxjava2%7Crxjava%7C2.2.12%7C))
+
+#### Bugfixes
+
+  - [Pull 6618](https://github.com/ReactiveX/RxJava/pull/6618): Fix `switchMap` incorrect sync-fusion & error management.
+  - [Pull 6627](https://github.com/ReactiveX/RxJava/pull/6627): Fix `blockingIterable` hang when force-disposed.
+  - [Pull 6629](https://github.com/ReactiveX/RxJava/pull/6629): Fix `refCount` not resetting when cross-canceled. 
+
+### Version 2.2.11 - August 2, 2019 ([Maven](http://search.maven.org/#artifactdetails%7Cio.reactivex.rxjava2%7Crxjava%7C2.2.11%7C))
+
+#### Bugfixes
+
+  - [Pull 6560](https://github.com/ReactiveX/RxJava/pull/6560): Fix NPE when debouncing an empty source.
+  - [Pull 6599](https://github.com/ReactiveX/RxJava/pull/6599): Fix `mergeWith` not canceling other when the main fails.
+  - [Pull 6601](https://github.com/ReactiveX/RxJava/pull/6601): `ObservableBlockingSubscribe` compares with wrong object.
+  - [Pull 6602](https://github.com/ReactiveX/RxJava/pull/): Fix truncation bugs in `replay()` and `ReplaySubject`/`Processor`.
+
+#### Documentation changes
+
+  - [Pull 6565](https://github.com/ReactiveX/RxJava/pull/6565): Fix JavaDocs of `Single.doOnTerminate` refer to `onComplete` notification.
+
+### Version 2.2.10 - June 21, 2019 ([Maven](http://search.maven.org/#artifactdetails%7Cio.reactivex.rxjava2%7Crxjava%7C2.2.10%7C))
+
+#### Bugfixes
+
+  - [Pull 6499](https://github.com/ReactiveX/RxJava/pull/6499): Add missing null check to `BufferExactBoundedObserver`.
+  - [Pull 6505](https://github.com/ReactiveX/RxJava/pull/6505): Fix `publish().refCount()` hang due to race.
+  - [Pull 6522](https://github.com/ReactiveX/RxJava/pull/6522): Fix `concatMapDelayError` not continuing on fused inner source crash.
+
+#### Documentation changes
+
+  - [Pull 6496](https://github.com/ReactiveX/RxJava/pull/6496): Fix outdated links in `Additional-Reading.md`.
+  - [Pull 6497](https://github.com/ReactiveX/RxJava/pull/6497): Fix links in `Alphabetical-List-of-Observable-Operators.md`.
+  - [Pull 6504](https://github.com/ReactiveX/RxJava/pull/6504): Fix various Javadocs & imports.
+  - [Pull 6506](https://github.com/ReactiveX/RxJava/pull/6506): Expand the Javadoc of `Flowable`.
+  - [Pull 6510](https://github.com/ReactiveX/RxJava/pull/6510): Correct "Reactive-Streams" to "Reactive Streams" in documentation.
+
 ### Version 2.2.9 - May 30, 2019 ([Maven](http://search.maven.org/#artifactdetails%7Cio.reactivex.rxjava2%7Crxjava%7C2.2.9%7C))
 
 #### Bugfixes
